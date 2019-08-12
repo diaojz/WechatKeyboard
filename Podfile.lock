@@ -1,0 +1,37 @@
+PODS:
+  - GBDeviceInfo (5.4.0):
+    - GBDeviceInfo/Core (= 5.4.0)
+  - GBDeviceInfo/Core (5.4.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - GBDeviceInfo (~> 5.4.0)
+  - YYCache
+  - YYText (~> 1.0.7)
+  - YYWebImage (~> 1.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GBDeviceInfo
+    - YYCache
+    - YYImage
+    - YYText
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  GBDeviceInfo: ae80eb4243d67e2c68d9290a136593da35071382
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 02e91596ed88d677c45acbb0fd6586d79a61e652
+
+COCOAPODS: 1.7.2

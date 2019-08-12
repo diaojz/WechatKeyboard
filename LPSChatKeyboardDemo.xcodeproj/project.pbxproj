@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EB227352301701F00FF4331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB227342301701F00FF4331 /* AppDelegate.m */; };
+		7EB227382301701F00FF4331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB227372301701F00FF4331 /* ViewController.m */; };
+		7EB2273B2301701F00FF4331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB227392301701F00FF4331 /* Main.storyboard */; };
+		7EB2273D2301702000FF4331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB2273C2301702000FF4331 /* Assets.xcassets */; };
+		7EB227402301702000FF4331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB2273E2301702000FF4331 /* LaunchScreen.storyboard */; };
+		7EB227432301702000FF4331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB227422301702000FF4331 /* main.m */; };
+		7EB2274B23017B3200FF4331 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB2274A23017B3200FF4331 /* ChatViewController.m */; };
+		7EB2274E23017C5C00FF4331 /* LPSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB2274D23017C5C00FF4331 /* LPSUtilities.m */; };
+		A76D08D6230198600073B1A8 /* RRChatKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08632301985F0073B1A8 /* RRChatKeyBoard.m */; };
+		A76D08D7230198600073B1A8 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A76D086E2301985F0073B1A8 /* libopencore-amrwb.a */; };
+		A76D08D8230198600073B1A8 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A76D086F2301985F0073B1A8 /* libopencore-amrnb.a */; };
+		A76D08D9230198600073B1A8 /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08702301985F0073B1A8 /* amrFileCodec.m */; };
+		A76D08DC230198600073B1A8 /* RRSoundRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D087D2301985F0073B1A8 /* RRSoundRecorder.m */; };
+		A76D08DD230198600073B1A8 /* RRAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D087F2301985F0073B1A8 /* RRAudioPlayer.m */; };
+		A76D08EE230198600073B1A8 /* RRMorePanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08A6230198600073B1A8 /* RRMorePanelView.m */; };
+		A76D08EF230198600073B1A8 /* RRMorePanelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08A7230198600073B1A8 /* RRMorePanelItem.m */; };
+		A76D08F0230198600073B1A8 /* RRChatKeyBoard+ShowSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08AA230198600073B1A8 /* RRChatKeyBoard+ShowSize.m */; };
+		A76D08FB230198600073B1A8 /* WXOUIModuleResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A76D08C2230198600073B1A8 /* WXOUIModuleResources.bundle */; };
+		A76D08FC230198600073B1A8 /* IMResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A76D08C3230198600073B1A8 /* IMResource.bundle */; };
+		A76D08FD230198600073B1A8 /* RRPluginViewRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D08C6230198600073B1A8 /* RRPluginViewRecordView.m */; };
+		A76D0903230198600073B1A8 /* face.plist in Resources */ = {isa = PBXBuildFile; fileRef = A76D08D5230198600073B1A8 /* face.plist */; };
+		A76D0918230198960073B1A8 /* NSString+RRIM.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0905230198950073B1A8 /* NSString+RRIM.m */; };
+		A76D0919230198960073B1A8 /* NSString+RRWid.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0907230198960073B1A8 /* NSString+RRWid.m */; };
+		A76D091A230198960073B1A8 /* UIColor+Wid.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0909230198960073B1A8 /* UIColor+Wid.m */; };
+		A76D091B230198960073B1A8 /* UIImage+RRIM.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D090C230198960073B1A8 /* UIImage+RRIM.m */; };
+		A76D091C230198960073B1A8 /* UIImage+imageBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D090F230198960073B1A8 /* UIImage+imageBundle.m */; };
+		A76D091D230198960073B1A8 /* UIView+Wid.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0910230198960073B1A8 /* UIView+Wid.m */; };
+		A76D091E230198960073B1A8 /* NSBundle+RRWid.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0911230198960073B1A8 /* NSBundle+RRWid.m */; };
+		A76D091F230198960073B1A8 /* UIView+RRIM.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0912230198960073B1A8 /* UIView+RRIM.m */; };
+		A76D0920230198960073B1A8 /* UIColor+RRIM.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0913230198960073B1A8 /* UIColor+RRIM.m */; };
+		A76D0921230198960073B1A8 /* NSAttributedString+RRWid.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0915230198960073B1A8 /* NSAttributedString+RRWid.m */; };
+		A76D0929230198AA0073B1A8 /* RRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0922230198AA0073B1A8 /* RRUtilities.m */; };
+		A76D092A230198AA0073B1A8 /* RRWidAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0928230198AA0073B1A8 /* RRWidAnimations.m */; };
+		A76D093F230198BE0073B1A8 /* UIButton+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D092B230198BD0073B1A8 /* UIButton+PPAddition.m */; };
+		A76D0940230198BE0073B1A8 /* NSAttributedString+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D092F230198BD0073B1A8 /* NSAttributedString+PPAddition.m */; };
+		A76D0941230198BE0073B1A8 /* UIScreen+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0934230198BD0073B1A8 /* UIScreen+PPAddition.m */; };
+		A76D0942230198BE0073B1A8 /* NSString+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0936230198BE0073B1A8 /* NSString+PPAddition.m */; };
+		A76D0943230198BE0073B1A8 /* PPSlideLineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D093A230198BE0073B1A8 /* PPSlideLineButton.m */; };
+		A76D0944230198BE0073B1A8 /* PPTextBackedString.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D093B230198BE0073B1A8 /* PPTextBackedString.m */; };
+		A76D0945230198BE0073B1A8 /* PPQueuingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D093C230198BE0073B1A8 /* PPQueuingScrollView.m */; };
+		A76D0946230198BE0073B1A8 /* UIColor+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D093D230198BE0073B1A8 /* UIColor+PPAddition.m */; };
+		A76D0947230198BE0073B1A8 /* UIScrollView+PPAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D093E230198BE0073B1A8 /* UIScrollView+PPAddition.m */; };
+		A76D0956230198CF0073B1A8 /* PPStickerKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D094C230198CF0073B1A8 /* PPStickerKeyboard.m */; };
+		A76D0957230198CF0073B1A8 /* PPSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D094D230198CF0073B1A8 /* PPSticker.m */; };
+		A76D0958230198CF0073B1A8 /* PPEmojiPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0950230198CF0073B1A8 /* PPEmojiPreviewView.m */; };
+		A76D0959230198CF0073B1A8 /* PPStickerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0951230198CF0073B1A8 /* PPStickerTextView.m */; };
+		A76D095A230198CF0073B1A8 /* PPStickerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0953230198CF0073B1A8 /* PPStickerPageView.m */; };
+		A76D095B230198CF0073B1A8 /* PPEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0954230198CF0073B1A8 /* PPEmoji.m */; };
+		A76D095C230198CF0073B1A8 /* PPStickerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D0955230198CF0073B1A8 /* PPStickerDataManager.m */; };
+		A76D096923019A800073B1A8 /* RRVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D095E23019A7F0073B1A8 /* RRVoiceRecordView.m */; };
+		A76D096A23019A800073B1A8 /* RRRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D096123019A7F0073B1A8 /* RRRecordButton.m */; };
+		A76D096B23019A800073B1A8 /* RRVoiceRecordControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D096223019A7F0073B1A8 /* RRVoiceRecordControl.m */; };
+		A76D096C23019A800073B1A8 /* RRVoiceRecordPowerAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D096623019A800073B1A8 /* RRVoiceRecordPowerAnimationView.m */; };
+		A76D096D23019A800073B1A8 /* RRVoiceRecordToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D096823019A800073B1A8 /* RRVoiceRecordToastContentView.m */; };
+		DC34AEC20D53B77353F703A0 /* libPods-LPSChatKeyboardDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D9AB273ADC1256E997B6D7 /* libPods-LPSChatKeyboardDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D3DCC65D837C0E39B6FE25F /* Pods-LPSChatKeyboardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSChatKeyboardDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSChatKeyboardDemo/Pods-LPSChatKeyboardDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7EB227302301701F00FF4331 /* LPSChatKeyboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPSChatKeyboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB227332301701F00FF4331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EB227342301701F00FF4331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EB227362301701F00FF4331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7EB227372301701F00FF4331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EB2273A2301701F00FF4331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EB2273C2301702000FF4331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EB2273F2301702000FF4331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EB227412301702000FF4331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB227422301702000FF4331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EB2274923017B3200FF4331 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		7EB2274A23017B3200FF4331 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		7EB2274C23017C5C00FF4331 /* LPSUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPSUtilities.h; sourceTree = "<group>"; };
+		7EB2274D23017C5C00FF4331 /* LPSUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPSUtilities.m; sourceTree = "<group>"; };
+		7EB228042301859700FF4331 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		7EB2280B2301873700FF4331 /* Marcos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marcos.h; sourceTree = "<group>"; };
+		8CF0E51AE23656021FF92FFF /* Pods-LPSChatKeyboardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSChatKeyboardDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSChatKeyboardDemo/Pods-LPSChatKeyboardDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		99D9AB273ADC1256E997B6D7 /* libPods-LPSChatKeyboardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPSChatKeyboardDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76D08632301985F0073B1A8 /* RRChatKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRChatKeyBoard.m; sourceTree = "<group>"; };
+		A76D08652301985F0073B1A8 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		A76D08682301985F0073B1A8 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		A76D08692301985F0073B1A8 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		A76D086B2301985F0073B1A8 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		A76D086C2301985F0073B1A8 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		A76D086E2301985F0073B1A8 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		A76D086F2301985F0073B1A8 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		A76D08702301985F0073B1A8 /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
+		A76D08712301985F0073B1A8 /* RRChatKeyBoardShowProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRChatKeyBoardShowProtocol.h; sourceTree = "<group>"; };
+		A76D08722301985F0073B1A8 /* RRChatKeyBoard+ShowSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RRChatKeyBoard+ShowSize.h"; sourceTree = "<group>"; };
+		A76D087C2301985F0073B1A8 /* RRAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRAudioPlayer.h; sourceTree = "<group>"; };
+		A76D087D2301985F0073B1A8 /* RRSoundRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSoundRecorder.m; sourceTree = "<group>"; };
+		A76D087E2301985F0073B1A8 /* RRSoundRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRSoundRecorder.h; sourceTree = "<group>"; };
+		A76D087F2301985F0073B1A8 /* RRAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAudioPlayer.m; sourceTree = "<group>"; };
+		A76D08A6230198600073B1A8 /* RRMorePanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMorePanelView.m; sourceTree = "<group>"; };
+		A76D08A7230198600073B1A8 /* RRMorePanelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMorePanelItem.m; sourceTree = "<group>"; };
+		A76D08A8230198600073B1A8 /* RRMorePanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMorePanelView.h; sourceTree = "<group>"; };
+		A76D08A9230198600073B1A8 /* RRMorePanelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMorePanelItem.h; sourceTree = "<group>"; };
+		A76D08AA230198600073B1A8 /* RRChatKeyBoard+ShowSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RRChatKeyBoard+ShowSize.m"; sourceTree = "<group>"; };
+		A76D08AB230198600073B1A8 /* RRChatKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRChatKeyBoard.h; sourceTree = "<group>"; };
+		A76D08C2230198600073B1A8 /* WXOUIModuleResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WXOUIModuleResources.bundle; sourceTree = "<group>"; };
+		A76D08C3230198600073B1A8 /* IMResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IMResource.bundle; sourceTree = "<group>"; };
+		A76D08C5230198600073B1A8 /* RRPluginViewRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRPluginViewRecordView.h; sourceTree = "<group>"; };
+		A76D08C6230198600073B1A8 /* RRPluginViewRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRPluginViewRecordView.m; sourceTree = "<group>"; };
+		A76D08D5230198600073B1A8 /* face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = face.plist; sourceTree = "<group>"; };
+		A76D0904230198950073B1A8 /* NSBundle+RRWid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RRWid.h"; sourceTree = "<group>"; };
+		A76D0905230198950073B1A8 /* NSString+RRIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RRIM.m"; sourceTree = "<group>"; };
+		A76D0906230198950073B1A8 /* NSString+RRWid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RRWid.h"; sourceTree = "<group>"; };
+		A76D0907230198960073B1A8 /* NSString+RRWid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RRWid.m"; sourceTree = "<group>"; };
+		A76D0908230198960073B1A8 /* UIView+Wid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Wid.h"; sourceTree = "<group>"; };
+		A76D0909230198960073B1A8 /* UIColor+Wid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Wid.m"; sourceTree = "<group>"; };
+		A76D090A230198960073B1A8 /* UIImage+imageBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageBundle.h"; sourceTree = "<group>"; };
+		A76D090B230198960073B1A8 /* UIImage+RRIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RRIM.h"; sourceTree = "<group>"; };
+		A76D090C230198960073B1A8 /* UIImage+RRIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RRIM.m"; sourceTree = "<group>"; };
+		A76D090D230198960073B1A8 /* UIColor+RRIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RRIM.h"; sourceTree = "<group>"; };
+		A76D090E230198960073B1A8 /* UIView+RRIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RRIM.h"; sourceTree = "<group>"; };
+		A76D090F230198960073B1A8 /* UIImage+imageBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageBundle.m"; sourceTree = "<group>"; };
+		A76D0910230198960073B1A8 /* UIView+Wid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Wid.m"; sourceTree = "<group>"; };
+		A76D0911230198960073B1A8 /* NSBundle+RRWid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RRWid.m"; sourceTree = "<group>"; };
+		A76D0912230198960073B1A8 /* UIView+RRIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RRIM.m"; sourceTree = "<group>"; };
+		A76D0913230198960073B1A8 /* UIColor+RRIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RRIM.m"; sourceTree = "<group>"; };
+		A76D0914230198960073B1A8 /* UIColor+Wid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Wid.h"; sourceTree = "<group>"; };
+		A76D0915230198960073B1A8 /* NSAttributedString+RRWid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+RRWid.m"; sourceTree = "<group>"; };
+		A76D0916230198960073B1A8 /* NSAttributedString+RRWid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+RRWid.h"; sourceTree = "<group>"; };
+		A76D0917230198960073B1A8 /* NSString+RRIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RRIM.h"; sourceTree = "<group>"; };
+		A76D0922230198AA0073B1A8 /* RRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRUtilities.m; sourceTree = "<group>"; };
+		A76D0923230198AA0073B1A8 /* RRHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRHeader.h; sourceTree = "<group>"; };
+		A76D0924230198AA0073B1A8 /* RRWidAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRWidAnimations.h; sourceTree = "<group>"; };
+		A76D0925230198AA0073B1A8 /* RRIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRIM.h; sourceTree = "<group>"; };
+		A76D0926230198AA0073B1A8 /* RRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRUtilities.h; sourceTree = "<group>"; };
+		A76D0927230198AA0073B1A8 /* IMAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAdapter.h; sourceTree = "<group>"; };
+		A76D0928230198AA0073B1A8 /* RRWidAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRWidAnimations.m; sourceTree = "<group>"; };
+		A76D092B230198BD0073B1A8 /* UIButton+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PPAddition.m"; sourceTree = "<group>"; };
+		A76D092C230198BD0073B1A8 /* UIScrollView+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PPAddition.h"; sourceTree = "<group>"; };
+		A76D092D230198BD0073B1A8 /* UIScreen+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+PPAddition.h"; sourceTree = "<group>"; };
+		A76D092E230198BD0073B1A8 /* UIButton+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PPAddition.h"; sourceTree = "<group>"; };
+		A76D092F230198BD0073B1A8 /* NSAttributedString+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+PPAddition.m"; sourceTree = "<group>"; };
+		A76D0930230198BD0073B1A8 /* PPSlideLineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSlideLineButton.h; sourceTree = "<group>"; };
+		A76D0931230198BD0073B1A8 /* UIColor+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PPAddition.h"; sourceTree = "<group>"; };
+		A76D0932230198BD0073B1A8 /* PPQueuingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPQueuingScrollView.h; sourceTree = "<group>"; };
+		A76D0933230198BD0073B1A8 /* PPTextBackedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTextBackedString.h; sourceTree = "<group>"; };
+		A76D0934230198BD0073B1A8 /* UIScreen+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+PPAddition.m"; sourceTree = "<group>"; };
+		A76D0935230198BE0073B1A8 /* NSString+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPAddition.h"; sourceTree = "<group>"; };
+		A76D0936230198BE0073B1A8 /* NSString+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPAddition.m"; sourceTree = "<group>"; };
+		A76D0937230198BE0073B1A8 /* PPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPUtil.h; sourceTree = "<group>"; };
+		A76D0938230198BE0073B1A8 /* NSAttributedString+PPAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+PPAddition.h"; sourceTree = "<group>"; };
+		A76D0939230198BE0073B1A8 /* PPReusablePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPReusablePage.h; sourceTree = "<group>"; };
+		A76D093A230198BE0073B1A8 /* PPSlideLineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSlideLineButton.m; sourceTree = "<group>"; };
+		A76D093B230198BE0073B1A8 /* PPTextBackedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTextBackedString.m; sourceTree = "<group>"; };
+		A76D093C230198BE0073B1A8 /* PPQueuingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPQueuingScrollView.m; sourceTree = "<group>"; };
+		A76D093D230198BE0073B1A8 /* UIColor+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PPAddition.m"; sourceTree = "<group>"; };
+		A76D093E230198BE0073B1A8 /* UIScrollView+PPAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PPAddition.m"; sourceTree = "<group>"; };
+		A76D0948230198CE0073B1A8 /* PPEmojiPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEmojiPreviewView.h; sourceTree = "<group>"; };
+		A76D0949230198CE0073B1A8 /* PPStickerPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStickerPageView.h; sourceTree = "<group>"; };
+		A76D094A230198CE0073B1A8 /* PPSticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSticker.h; sourceTree = "<group>"; };
+		A76D094B230198CF0073B1A8 /* PPEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEmoji.h; sourceTree = "<group>"; };
+		A76D094C230198CF0073B1A8 /* PPStickerKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStickerKeyboard.m; sourceTree = "<group>"; };
+		A76D094D230198CF0073B1A8 /* PPSticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSticker.m; sourceTree = "<group>"; };
+		A76D094E230198CF0073B1A8 /* PPStickerTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStickerTextView.h; sourceTree = "<group>"; };
+		A76D094F230198CF0073B1A8 /* PPStickerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStickerDataManager.h; sourceTree = "<group>"; };
+		A76D0950230198CF0073B1A8 /* PPEmojiPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEmojiPreviewView.m; sourceTree = "<group>"; };
+		A76D0951230198CF0073B1A8 /* PPStickerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStickerTextView.m; sourceTree = "<group>"; };
+		A76D0952230198CF0073B1A8 /* PPStickerKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPStickerKeyboard.h; sourceTree = "<group>"; };
+		A76D0953230198CF0073B1A8 /* PPStickerPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStickerPageView.m; sourceTree = "<group>"; };
+		A76D0954230198CF0073B1A8 /* PPEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEmoji.m; sourceTree = "<group>"; };
+		A76D0955230198CF0073B1A8 /* PPStickerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPStickerDataManager.m; sourceTree = "<group>"; };
+		A76D095E23019A7F0073B1A8 /* RRVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRVoiceRecordView.m; sourceTree = "<group>"; };
+		A76D095F23019A7F0073B1A8 /* RRVoiceRecordPowerAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRVoiceRecordPowerAnimationView.h; sourceTree = "<group>"; };
+		A76D096023019A7F0073B1A8 /* RRVoiceRecordControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRVoiceRecordControl.h; sourceTree = "<group>"; };
+		A76D096123019A7F0073B1A8 /* RRRecordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRRecordButton.m; sourceTree = "<group>"; };
+		A76D096223019A7F0073B1A8 /* RRVoiceRecordControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRVoiceRecordControl.m; sourceTree = "<group>"; };
+		A76D096323019A7F0073B1A8 /* RRVoiceRecordDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRVoiceRecordDefine.h; sourceTree = "<group>"; };
+		A76D096423019A800073B1A8 /* RRVoiceRecordToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRVoiceRecordToastContentView.h; sourceTree = "<group>"; };
+		A76D096523019A800073B1A8 /* RRVoiceRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRVoiceRecordView.h; sourceTree = "<group>"; };
+		A76D096623019A800073B1A8 /* RRVoiceRecordPowerAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRVoiceRecordPowerAnimationView.m; sourceTree = "<group>"; };
+		A76D096723019A800073B1A8 /* RRRecordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRRecordButton.h; sourceTree = "<group>"; };
+		A76D096823019A800073B1A8 /* RRVoiceRecordToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRVoiceRecordToastContentView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EB2272D2301701F00FF4331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76D08D7230198600073B1A8 /* libopencore-amrwb.a in Frameworks */,
+				A76D08D8230198600073B1A8 /* libopencore-amrnb.a in Frameworks */,
+				DC34AEC20D53B77353F703A0 /* libPods-LPSChatKeyboardDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344A8C68519A3EC0C26F6A8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF0E51AE23656021FF92FFF /* Pods-LPSChatKeyboardDemo.debug.xcconfig */,
+				6D3DCC65D837C0E39B6FE25F /* Pods-LPSChatKeyboardDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EB227272301701F00FF4331 = {
+			isa = PBXGroup;
+			children = (
+				7EB227322301701F00FF4331 /* LPSChatKeyboardDemo */,
+				7EB227312301701F00FF4331 /* Products */,
+				344A8C68519A3EC0C26F6A8D /* Pods */,
+				B29D08A079F41F452FF0F320 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EB227312301701F00FF4331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EB227302301701F00FF4331 /* LPSChatKeyboardDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EB227322301701F00FF4331 /* LPSChatKeyboardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7EB2274F2301802100FF4331 /* Keyboard */,
+				A76D095D230199BD0073B1A8 /* Controller */,
+				7EB227332301701F00FF4331 /* AppDelegate.h */,
+				7EB227342301701F00FF4331 /* AppDelegate.m */,
+				7EB2274C23017C5C00FF4331 /* LPSUtilities.h */,
+				7EB2274D23017C5C00FF4331 /* LPSUtilities.m */,
+				7EB228042301859700FF4331 /* Prefix.pch */,
+				7EB2280B2301873700FF4331 /* Marcos.h */,
+				7EB227392301701F00FF4331 /* Main.storyboard */,
+				7EB2273C2301702000FF4331 /* Assets.xcassets */,
+				7EB2273E2301702000FF4331 /* LaunchScreen.storyboard */,
+				7EB227412301702000FF4331 /* Info.plist */,
+				7EB227422301702000FF4331 /* main.m */,
+			);
+			path = LPSChatKeyboardDemo;
+			sourceTree = "<group>";
+		};
+		7EB2274F2301802100FF4331 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08AB230198600073B1A8 /* RRChatKeyBoard.h */,
+				A76D08632301985F0073B1A8 /* RRChatKeyBoard.m */,
+				A76D08722301985F0073B1A8 /* RRChatKeyBoard+ShowSize.h */,
+				A76D08AA230198600073B1A8 /* RRChatKeyBoard+ShowSize.m */,
+				A76D08712301985F0073B1A8 /* RRChatKeyBoardShowProtocol.h */,
+				A76D08642301985F0073B1A8 /* AMR */,
+				A76D087B2301985F0073B1A8 /* Audio */,
+				A76D08AC230198600073B1A8 /* Category */,
+				A76D08732301985F0073B1A8 /* Common */,
+				A76D0880230198600073B1A8 /* FaceView */,
+				A76D08A5230198600073B1A8 /* MoreView */,
+				A76D08C1230198600073B1A8 /* Resourece */,
+				A76D08C4230198600073B1A8 /* Voice */,
+				A76D08C7230198600073B1A8 /* VoiceRecord */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		A76D08642301985F0073B1A8 /* AMR */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08652301985F0073B1A8 /* amrFileCodec.h */,
+				A76D08702301985F0073B1A8 /* amrFileCodec.m */,
+				A76D08662301985F0073B1A8 /* include */,
+				A76D086D2301985F0073B1A8 /* lib */,
+			);
+			path = AMR;
+			sourceTree = "<group>";
+		};
+		A76D08662301985F0073B1A8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08672301985F0073B1A8 /* opencore-amrwb */,
+				A76D086A2301985F0073B1A8 /* opencore-amrnb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A76D08672301985F0073B1A8 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08682301985F0073B1A8 /* if_rom.h */,
+				A76D08692301985F0073B1A8 /* dec_if.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		A76D086A2301985F0073B1A8 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				A76D086B2301985F0073B1A8 /* interf_dec.h */,
+				A76D086C2301985F0073B1A8 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		A76D086D2301985F0073B1A8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A76D086E2301985F0073B1A8 /* libopencore-amrwb.a */,
+				A76D086F2301985F0073B1A8 /* libopencore-amrnb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A76D08732301985F0073B1A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0927230198AA0073B1A8 /* IMAdapter.h */,
+				A76D0923230198AA0073B1A8 /* RRHeader.h */,
+				A76D0925230198AA0073B1A8 /* RRIM.h */,
+				A76D0926230198AA0073B1A8 /* RRUtilities.h */,
+				A76D0922230198AA0073B1A8 /* RRUtilities.m */,
+				A76D0924230198AA0073B1A8 /* RRWidAnimations.h */,
+				A76D0928230198AA0073B1A8 /* RRWidAnimations.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A76D087B2301985F0073B1A8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A76D087C2301985F0073B1A8 /* RRAudioPlayer.h */,
+				A76D087F2301985F0073B1A8 /* RRAudioPlayer.m */,
+				A76D087D2301985F0073B1A8 /* RRSoundRecorder.m */,
+				A76D087E2301985F0073B1A8 /* RRSoundRecorder.h */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A76D0880230198600073B1A8 /* FaceView */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0881230198600073B1A8 /* Util */,
+				A76D0896230198600073B1A8 /* PPKeyboard */,
+			);
+			path = FaceView;
+			sourceTree = "<group>";
+		};
+		A76D0881230198600073B1A8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0938230198BE0073B1A8 /* NSAttributedString+PPAddition.h */,
+				A76D092F230198BD0073B1A8 /* NSAttributedString+PPAddition.m */,
+				A76D0935230198BE0073B1A8 /* NSString+PPAddition.h */,
+				A76D0936230198BE0073B1A8 /* NSString+PPAddition.m */,
+				A76D0932230198BD0073B1A8 /* PPQueuingScrollView.h */,
+				A76D093C230198BE0073B1A8 /* PPQueuingScrollView.m */,
+				A76D0939230198BE0073B1A8 /* PPReusablePage.h */,
+				A76D0930230198BD0073B1A8 /* PPSlideLineButton.h */,
+				A76D093A230198BE0073B1A8 /* PPSlideLineButton.m */,
+				A76D0933230198BD0073B1A8 /* PPTextBackedString.h */,
+				A76D093B230198BE0073B1A8 /* PPTextBackedString.m */,
+				A76D0937230198BE0073B1A8 /* PPUtil.h */,
+				A76D092E230198BD0073B1A8 /* UIButton+PPAddition.h */,
+				A76D092B230198BD0073B1A8 /* UIButton+PPAddition.m */,
+				A76D0931230198BD0073B1A8 /* UIColor+PPAddition.h */,
+				A76D093D230198BE0073B1A8 /* UIColor+PPAddition.m */,
+				A76D092D230198BD0073B1A8 /* UIScreen+PPAddition.h */,
+				A76D0934230198BD0073B1A8 /* UIScreen+PPAddition.m */,
+				A76D092C230198BD0073B1A8 /* UIScrollView+PPAddition.h */,
+				A76D093E230198BE0073B1A8 /* UIScrollView+PPAddition.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A76D0896230198600073B1A8 /* PPKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A76D094B230198CF0073B1A8 /* PPEmoji.h */,
+				A76D0954230198CF0073B1A8 /* PPEmoji.m */,
+				A76D0948230198CE0073B1A8 /* PPEmojiPreviewView.h */,
+				A76D0950230198CF0073B1A8 /* PPEmojiPreviewView.m */,
+				A76D094A230198CE0073B1A8 /* PPSticker.h */,
+				A76D094D230198CF0073B1A8 /* PPSticker.m */,
+				A76D094F230198CF0073B1A8 /* PPStickerDataManager.h */,
+				A76D0955230198CF0073B1A8 /* PPStickerDataManager.m */,
+				A76D0952230198CF0073B1A8 /* PPStickerKeyboard.h */,
+				A76D094C230198CF0073B1A8 /* PPStickerKeyboard.m */,
+				A76D0949230198CE0073B1A8 /* PPStickerPageView.h */,
+				A76D0953230198CF0073B1A8 /* PPStickerPageView.m */,
+				A76D094E230198CF0073B1A8 /* PPStickerTextView.h */,
+				A76D0951230198CF0073B1A8 /* PPStickerTextView.m */,
+			);
+			path = PPKeyboard;
+			sourceTree = "<group>";
+		};
+		A76D08A5230198600073B1A8 /* MoreView */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08A9230198600073B1A8 /* RRMorePanelItem.h */,
+				A76D08A7230198600073B1A8 /* RRMorePanelItem.m */,
+				A76D08A8230198600073B1A8 /* RRMorePanelView.h */,
+				A76D08A6230198600073B1A8 /* RRMorePanelView.m */,
+			);
+			path = MoreView;
+			sourceTree = "<group>";
+		};
+		A76D08AC230198600073B1A8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A76D0916230198960073B1A8 /* NSAttributedString+RRWid.h */,
+				A76D0915230198960073B1A8 /* NSAttributedString+RRWid.m */,
+				A76D0904230198950073B1A8 /* NSBundle+RRWid.h */,
+				A76D0911230198960073B1A8 /* NSBundle+RRWid.m */,
+				A76D0917230198960073B1A8 /* NSString+RRIM.h */,
+				A76D0905230198950073B1A8 /* NSString+RRIM.m */,
+				A76D0906230198950073B1A8 /* NSString+RRWid.h */,
+				A76D0907230198960073B1A8 /* NSString+RRWid.m */,
+				A76D090D230198960073B1A8 /* UIColor+RRIM.h */,
+				A76D0913230198960073B1A8 /* UIColor+RRIM.m */,
+				A76D0914230198960073B1A8 /* UIColor+Wid.h */,
+				A76D0909230198960073B1A8 /* UIColor+Wid.m */,
+				A76D090A230198960073B1A8 /* UIImage+imageBundle.h */,
+				A76D090F230198960073B1A8 /* UIImage+imageBundle.m */,
+				A76D090B230198960073B1A8 /* UIImage+RRIM.h */,
+				A76D090C230198960073B1A8 /* UIImage+RRIM.m */,
+				A76D090E230198960073B1A8 /* UIView+RRIM.h */,
+				A76D0912230198960073B1A8 /* UIView+RRIM.m */,
+				A76D0908230198960073B1A8 /* UIView+Wid.h */,
+				A76D0910230198960073B1A8 /* UIView+Wid.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A76D08C1230198600073B1A8 /* Resourece */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08D3230198600073B1A8 /* Model */,
+				A76D08C2230198600073B1A8 /* WXOUIModuleResources.bundle */,
+				A76D08C3230198600073B1A8 /* IMResource.bundle */,
+			);
+			path = Resourece;
+			sourceTree = "<group>";
+		};
+		A76D08C4230198600073B1A8 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08C5230198600073B1A8 /* RRPluginViewRecordView.h */,
+				A76D08C6230198600073B1A8 /* RRPluginViewRecordView.m */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		A76D08C7230198600073B1A8 /* VoiceRecord */ = {
+			isa = PBXGroup;
+			children = (
+				A76D096723019A800073B1A8 /* RRRecordButton.h */,
+				A76D096123019A7F0073B1A8 /* RRRecordButton.m */,
+				A76D096023019A7F0073B1A8 /* RRVoiceRecordControl.h */,
+				A76D096223019A7F0073B1A8 /* RRVoiceRecordControl.m */,
+				A76D096323019A7F0073B1A8 /* RRVoiceRecordDefine.h */,
+				A76D095F23019A7F0073B1A8 /* RRVoiceRecordPowerAnimationView.h */,
+				A76D096623019A800073B1A8 /* RRVoiceRecordPowerAnimationView.m */,
+				A76D096423019A800073B1A8 /* RRVoiceRecordToastContentView.h */,
+				A76D096823019A800073B1A8 /* RRVoiceRecordToastContentView.m */,
+				A76D096523019A800073B1A8 /* RRVoiceRecordView.h */,
+				A76D095E23019A7F0073B1A8 /* RRVoiceRecordView.m */,
+			);
+			path = VoiceRecord;
+			sourceTree = "<group>";
+		};
+		A76D08D3230198600073B1A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08D4230198600073B1A8 /* plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A76D08D4230198600073B1A8 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				A76D08D5230198600073B1A8 /* face.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		A76D095D230199BD0073B1A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7EB227362301701F00FF4331 /* ViewController.h */,
+				7EB227372301701F00FF4331 /* ViewController.m */,
+				7EB2274923017B3200FF4331 /* ChatViewController.h */,
+				7EB2274A23017B3200FF4331 /* ChatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29D08A079F41F452FF0F320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D9AB273ADC1256E997B6D7 /* libPods-LPSChatKeyboardDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EB2272F2301701F00FF4331 /* LPSChatKeyboardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB227462301702000FF4331 /* Build configuration list for PBXNativeTarget "LPSChatKeyboardDemo" */;
+			buildPhases = (
+				CFD8BF61B63AE888089F4962 /* [CP] Check Pods Manifest.lock */,
+				7EB2272C2301701F00FF4331 /* Sources */,
+				7EB2272D2301701F00FF4331 /* Frameworks */,
+				7EB2272E2301701F00FF4331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPSChatKeyboardDemo;
+			productName = LPSChatKeyboardDemo;
+			productReference = 7EB227302301701F00FF4331 /* LPSChatKeyboardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EB227282301701F00FF4331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = renrui;
+				TargetAttributes = {
+					7EB2272F2301701F00FF4331 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 7EB2272B2301701F00FF4331 /* Build configuration list for PBXProject "LPSChatKeyboardDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EB227272301701F00FF4331;
+			productRefGroup = 7EB227312301701F00FF4331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EB2272F2301701F00FF4331 /* LPSChatKeyboardDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EB2272E2301701F00FF4331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76D08FB230198600073B1A8 /* WXOUIModuleResources.bundle in Resources */,
+				A76D08FC230198600073B1A8 /* IMResource.bundle in Resources */,
+				7EB227402301702000FF4331 /* LaunchScreen.storyboard in Resources */,
+				7EB2273D2301702000FF4331 /* Assets.xcassets in Resources */,
+				7EB2273B2301701F00FF4331 /* Main.storyboard in Resources */,
+				A76D0903230198600073B1A8 /* face.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFD8BF61B63AE888089F4962 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LPSChatKeyboardDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EB2272C2301701F00FF4331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76D0943230198BE0073B1A8 /* PPSlideLineButton.m in Sources */,
+				A76D093F230198BE0073B1A8 /* UIButton+PPAddition.m in Sources */,
+				A76D0940230198BE0073B1A8 /* NSAttributedString+PPAddition.m in Sources */,
+				A76D0919230198960073B1A8 /* NSString+RRWid.m in Sources */,
+				A76D0929230198AA0073B1A8 /* RRUtilities.m in Sources */,
+				A76D0959230198CF0073B1A8 /* PPStickerTextView.m in Sources */,
+				A76D092A230198AA0073B1A8 /* RRWidAnimations.m in Sources */,
+				A76D0946230198BE0073B1A8 /* UIColor+PPAddition.m in Sources */,
+				A76D0944230198BE0073B1A8 /* PPTextBackedString.m in Sources */,
+				A76D095B230198CF0073B1A8 /* PPEmoji.m in Sources */,
+				A76D091B230198960073B1A8 /* UIImage+RRIM.m in Sources */,
+				A76D096B23019A800073B1A8 /* RRVoiceRecordControl.m in Sources */,
+				A76D091D230198960073B1A8 /* UIView+Wid.m in Sources */,
+				A76D08EE230198600073B1A8 /* RRMorePanelView.m in Sources */,
+				A76D08DC230198600073B1A8 /* RRSoundRecorder.m in Sources */,
+				A76D0941230198BE0073B1A8 /* UIScreen+PPAddition.m in Sources */,
+				A76D091F230198960073B1A8 /* UIView+RRIM.m in Sources */,
+				A76D08D6230198600073B1A8 /* RRChatKeyBoard.m in Sources */,
+				A76D096D23019A800073B1A8 /* RRVoiceRecordToastContentView.m in Sources */,
+				A76D0942230198BE0073B1A8 /* NSString+PPAddition.m in Sources */,
+				7EB227382301701F00FF4331 /* ViewController.m in Sources */,
+				A76D0918230198960073B1A8 /* NSString+RRIM.m in Sources */,
+				A76D08D9230198600073B1A8 /* amrFileCodec.m in Sources */,
+				A76D091C230198960073B1A8 /* UIImage+imageBundle.m in Sources */,
+				A76D08F0230198600073B1A8 /* RRChatKeyBoard+ShowSize.m in Sources */,
+				7EB227432301702000FF4331 /* main.m in Sources */,
+				A76D095C230198CF0073B1A8 /* PPStickerDataManager.m in Sources */,
+				7EB2274B23017B3200FF4331 /* ChatViewController.m in Sources */,
+				A76D091E230198960073B1A8 /* NSBundle+RRWid.m in Sources */,
+				A76D096A23019A800073B1A8 /* RRRecordButton.m in Sources */,
+				A76D0947230198BE0073B1A8 /* UIScrollView+PPAddition.m in Sources */,
+				A76D0956230198CF0073B1A8 /* PPStickerKeyboard.m in Sources */,
+				7EB2274E23017C5C00FF4331 /* LPSUtilities.m in Sources */,
+				A76D0958230198CF0073B1A8 /* PPEmojiPreviewView.m in Sources */,
+				A76D08DD230198600073B1A8 /* RRAudioPlayer.m in Sources */,
+				A76D0920230198960073B1A8 /* UIColor+RRIM.m in Sources */,
+				A76D095A230198CF0073B1A8 /* PPStickerPageView.m in Sources */,
+				A76D08FD230198600073B1A8 /* RRPluginViewRecordView.m in Sources */,
+				A76D0957230198CF0073B1A8 /* PPSticker.m in Sources */,
+				A76D0945230198BE0073B1A8 /* PPQueuingScrollView.m in Sources */,
+				7EB227352301701F00FF4331 /* AppDelegate.m in Sources */,
+				A76D096C23019A800073B1A8 /* RRVoiceRecordPowerAnimationView.m in Sources */,
+				A76D0921230198960073B1A8 /* NSAttributedString+RRWid.m in Sources */,
+				A76D091A230198960073B1A8 /* UIColor+Wid.m in Sources */,
+				A76D096923019A800073B1A8 /* RRVoiceRecordView.m in Sources */,
+				A76D08EF230198600073B1A8 /* RRMorePanelItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EB227392301701F00FF4331 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB2273A2301701F00FF4331 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EB2273E2301702000FF4331 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB2273F2301702000FF4331 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EB227442301702000FF4331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EB227452301702000FF4331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EB227472301702000FF4331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF0E51AE23656021FF92FFF /* Pods-LPSChatKeyboardDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A88V6M8F5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LPSChatKeyboardDemo/Prefix.pch";
+				INFOPLIST_FILE = LPSChatKeyboardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LPSChatKeyboardDemo/Keyboard/AMR/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renrui.LPSChatKeyboardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EB227482301702000FF4331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3DCC65D837C0E39B6FE25F /* Pods-LPSChatKeyboardDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A88V6M8F5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LPSChatKeyboardDemo/Prefix.pch";
+				INFOPLIST_FILE = LPSChatKeyboardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LPSChatKeyboardDemo/Keyboard/AMR/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renrui.LPSChatKeyboardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EB2272B2301701F00FF4331 /* Build configuration list for PBXProject "LPSChatKeyboardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB227442301702000FF4331 /* Debug */,
+				7EB227452301702000FF4331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB227462301702000FF4331 /* Build configuration list for PBXNativeTarget "LPSChatKeyboardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB227472301702000FF4331 /* Debug */,
+				7EB227482301702000FF4331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EB227282301701F00FF4331 /* Project object */;
+}

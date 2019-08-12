@@ -1,0 +1,21 @@
+//
+//  UIColor+Wid.h
+//  LPSChatKeyboardDemo
+//
+//  Created by Daniel_Lee on 2019/8/12.
+//  Copyright © 2019 renrui. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIColor (Wid)
+
++ (UIColor *)colorWithHexValue:(NSInteger)color alpha:(CGFloat)alpha;
+
++ (UIColor *)colorWithHexValue:(NSInteger)color;
+
+@end
+
+NS_ASSUME_NONNULL_END
